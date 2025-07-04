@@ -10,7 +10,9 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+//   Scalable, parameterized unsigned ALU supporting unsigned operations only.
+//   Add, Sub, Inc, Dec, Logic Ops, Shifts, Rotates.
+//   Overflow and underflow detected for unsigned arithmetic.
 // Dependencies: 
 // 
 // Revision:
