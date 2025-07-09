@@ -60,7 +60,7 @@ module alu #(
             OP_SUB: next_out = {1'b0, A} - {1'b0, B}; //subtract two registers
             OP_INC: next_out = {1'b0, A} + 1'b1; //increment register by 1
             OP_DEC: next_out = {1'b0, A} - 1'b1; //decrement register by 1
-            OP_ZERO: next_out = {(WIDTH+1)(1'b0)}; //set to zero
+            OP_ZERO: next_out = {(WIDTH+1){1'b0}}; //set to zero
             OP_AND: next_out = {1'b0, A & B}; //and two registers
             OP_OR: next_out = {1'b0, A | B}; //or two registers
             OP_XOR: next_out = {1'b0, A ^ B}; //xor two registers
